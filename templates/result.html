@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Result</title>
+    <style>
+        body {
+            background-image: url('https://www.eduopinions.com/wp-content/uploads/2022/08/Bowen-University_Logo.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+        .result-container {
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Application Result</h1>
+        <p>Matric Number: {{ matric_number }}</p>
+        <p>Level: {{ level }}</p>
+        <p>Hostel: {{ hostel }}</p>
+        <p>Room Number: {{ room_number }}</p>
+        <a href="{{ url_for('show_login_form') }}">Back to Login</a>
+    </div>
+</body>
+</html>
